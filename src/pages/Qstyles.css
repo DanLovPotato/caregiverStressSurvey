@@ -1,0 +1,380 @@
+.questionnaire {
+    background-image: url('./img/Qbg.png');
+    text-align: center;
+    margin: auto;
+    height: 100vh; /* Make the container fill the entire viewport height */
+    width: 100%; /* Make the container fill the entire viewport width */
+    background-size: 100% 100vh; /* Maintain aspect ratio without stretching */
+    background-position: center; /* Center your image in the container */
+    overflow: hidden; /* Disable scrolling */
+
+}
+.all{
+    text-align: center;
+    margin: auto;
+    height: 80vh; /* Make the container fill the entire viewport height */
+    width: 100%; /* Make the container fill the entire viewport width */
+    margin: 11vh auto 0; /* Adjust the top margin to move it down */
+
+}
+
+.concernButtomsArea {
+  display: flex;
+  margin: 0 auto; /* This will center the element horizontally */
+  width: 100vh;
+  height: 20vh;
+  justify-content: center; /* Center horizontally */
+  flex-wrap: wrap; /* Allow buttons to wrap onto multiple lines */
+}
+
+.concern-button {
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: max-content; /* Set minimum width based on content */
+    white-space: nowrap; /* Prevent text from wrapping onto multiple lines */
+
+    /*the above is about the look of the buttoms */
+     padding: 15px 25px;
+     border: unset;
+     border-radius: 15px;
+     color: #212121;
+     z-index: 1;
+     background: #e8e8e8;
+     position: relative;
+     font-size: 17px;
+     -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+     transition: all 250ms;
+     overflow: hidden;
+    p {
+      font-size: 1.2rem;
+    }
+
+}
+.concern-button {
+    display: flex; /* Make the button flex */
+    justify-content: center; /* Center its content horizontally */
+    align-items: center; /* Center its content vertically */
+    display: block;
+    margin: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+
+    &.selected {
+      background: #e2aab5;
+      color: white;
+    }
+}
+/* the following is the hover effect of buttom */
+.concern-button::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 0;
+ border-radius: 15px;
+ background-color: #e2aab5;
+ z-index: -1;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms
+}
+
+.concern-button:hover {
+ color: #e8e8e8;
+}
+
+.concern-button:hover::before {
+ width: 100%;
+}
+
+/* hover effect of buttom ends here*/
+
+.chickenContainer{
+ margin-right: 30px;
+ margin-left: 70px;
+}
+.chickenandquestion{
+  display: flex;
+  align-items: center;
+}
+.profile-pic {
+  width: 100px; /* Adjust the size as needed */
+  height: 100px;
+  border-radius: 80%; /* Makes the image circular */
+  transform: translateY(-6.6vh); /* Move the picture upwards by 10 pixels */
+}
+
+.questionContent{
+    font-size: 3.8vh;
+}
+
+
+.question {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Adds space below the question container */
+  margin-top: 4px;
+  margin-right: 70px;
+  font-size: 2.7vh;
+  border-radius: 25px;
+  background-color: white;
+  display: inline-block;
+  padding: 20px 40px;
+  /* Add a shadow for better visibility if you want */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+   flex-grow: 1; /* Ensures that the question block takes up the remaining space */
+}
+
+
+.question-content-container {
+  flex-grow: 1;
+}
+
+
+
+
+
+.selectp{
+    font-size: 2.9vh;
+}
+
+
+/* options never sometimes aleays, start from here*/
+.slider {
+  -webkit-appearance: none;
+  width: 87%; /* Adjust the width as necessary */
+
+  height: 2px;
+  background: #D3D3D3;
+  outline: none;
+
+  -webkit-transition: .2s;
+
+  position: relative;
+  z-index: 1; /* Ensure the slider is above the tick marks */
+}
+
+
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
+  background-size: cover; /* Ensure the emoji covers the thumb area */
+  cursor: pointer;
+  border-radius: 50%; /* Circle shape */
+   z-index: 3; /* Ensure the thumb is above the tick marks */
+}
+
+.slider::-moz-range-thumb {
+  width: 50px;
+  height: 50px;
+  background-size: cover; /* Ensure the emoji covers the thumb area */
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+  margin-top: 5vh;
+}
+
+.option-label {
+  color: #555;
+  font-size: 14px;
+}
+
+
+.slider-thumb-0::-webkit-slider-thumb,
+.slider-thumb-1::-webkit-slider-thumb,
+.slider-thumb-2::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 8vh; /* Thumb size */
+  height: 8vh; /* Thumb size */
+  border-radius: 50%; /* Circle shape */
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px 40px; /* Set the emoji image size */
+}
+
+.slider-thumb-0::-webkit-slider-thumb {
+  background: url('./img/smileEmoji.png') no-repeat center center / cover;
+}
+
+.slider-thumb-1::-webkit-slider-thumb {
+  background: url('./img/midEmoji.png') no-repeat center center / cover;
+}
+
+.slider-thumb-2::-webkit-slider-thumb {
+  background: url('./img/sadEmoji.png') no-repeat center center / cover;
+}
+
+
+
+/* ticks */
+.slider-container {
+  position: relative;
+  width: 87%;
+  margin: auto; /* Center the slider within its parent */
+}
+/* Custom ticks as circles */
+.slider-tick {
+  width: 4.5vh; /* Circle size */
+  height: 4.5vh; /* Circle size */
+  border-radius: 50%; /* Make it round */
+  background: #D3D3D3; /* Circle color */
+  position: absolute;
+  top: 30%;
+
+}
+
+/* Position each tick on the slider */
+.slider-tick:first-child { left: 0;  transform: translate(+170%, -70%);}
+.slider-tick:nth-child(2) { left: 50%; transform: translate(-50%, -70%); }
+.slider-tick:last-child { right: 0;  transform: translate(-170%, -70%);}
+
+
+
+
+
+/* options end  here*/
+
+
+
+.next-button {
+  position: relative;
+  margin: auto;
+  margin-top: 40px;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.next-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.next-button span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.next-button svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.next-button:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.next-button:hover svg {
+  transform: translateX(0);
+}
+
+.next-button:active {
+  transform: scale(0.95);
+}
+
+
+
+
+
+/* progress bar */
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  padding-top: 3vh;
+
+  margin-left: 30vh;
+  margin-right: 30vh;
+  /* Other styles as needed */
+}
+
+.progress {
+    flex-grow: 1; /* Take remaining space */
+    height: 30px; /* Adjust the height of the progress bar */
+    background: #f9f9f9; /* Background color */
+    border-radius: 20px; /* Rounded corners */
+    display: inline-block;
+    width: 65%;
+    height: 30px;
+    margin: 35px;
+    border-radius: 20px;
+
+}
+
+.bar {
+    border-radius: 20px;
+    width: 0%;
+    height: 100%;
+    transition: width;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.36,.55,.63,.48);
+}
+
+.bubbles {
+    background-image: linear-gradient(to right, #ffafcc, #bde0fe, #cdb4db);
+}
+
+/* progress number */
+
+.number-container {
+    margin-right: 1rem; /* Add some space between the number and the progress bar */
+    margin-left: 10rem;
+}
+
+.number {
+    /* Style for the number, adjust as needed */
+    pointer-events: auto; /* Re-enable pointer events for the .number div */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white; /* Background color */
+    border-radius: 50%; /* Circle shape */
+    width: 35px; /* Width */
+    height: 35px; /* Height */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Optional shadow */
+    font-size: 1rem; /* Adjust font size as needed */
+    color: #fb6f92; /* Font color */
+    /* Rest of your styles */
+}
+
