@@ -51,6 +51,7 @@ const Questionnaire = () => {
                   </div>
                   <div className="question">
                     <p className ="questionContent">3/13 Has caregiving been physically straining to you?</p> {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
+
                         <div className="slider-container">
                           <input
                             type="range"
