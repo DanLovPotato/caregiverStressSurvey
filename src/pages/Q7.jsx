@@ -78,7 +78,7 @@ const Questionnaire = () => {
               <div className="concerns">
                 <p className="selectp">Select any concerns you've faced while caregiving (0/8):</p>
                 <div class="concernButtomsArea">
-                    {['Employment/career obligations', 'Parenting responsibilities as a parent', 'Household responsibilities', 'Pursuing further education, training, or professional development', 'Having responsibilities to support other family members', 'Children\'s school activities overlap', 'Personal health or medical issues', 'Limited time for self-care', 'Community or volunteer commitments complicate schedule'].map((concern) => (
+                    {['Employment/career obligations', 'Parenting responsibilities as a parent', 'Household responsibilities', 'Pursuing further education, training, or professional development', 'Having responsibilities to support other family members', 'Children\'s school activities overlap', 'Personal health or medical issues', 'Limited time for self-care', 'Community or volunteer commitments complicate schedule', 'Other'].map((concern) => (
                         /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
                           <button
                             type="button"

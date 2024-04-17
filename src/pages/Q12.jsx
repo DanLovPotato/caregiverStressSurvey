@@ -8,7 +8,7 @@ import chicken from './img/chicken.png';
 
 
 const Questionnaire = () => {
-  const [progress, setProgress] = useState(3/13 * 100); // Initialize to 0 for no progress !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  const [progress, setProgress] = useState(12/13 * 100); // Initialize to 0 for no progress !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   const [selectedOption, setSelectedOption] = useState(0); // Initialize to 0 for the first option "Never"
   const [selectedConcerns, setSelectedConcerns] = useState([]);
 
@@ -36,7 +36,7 @@ const Questionnaire = () => {
         <div className="questionnaire">
             <div className="progress-bar-container">
                <div class="progressnumber">
-                     <div className="number" >3</div>  {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
+                     <div className="number" >12</div>  {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
                </div>
                 <div class="progress">
                     <div class="bar shadow bubbles" style={{width: `${progress}%`}}></div>
@@ -50,7 +50,7 @@ const Questionnaire = () => {
                     <img  className="profile-pic" src={chicken}  alt="ChickenBaby" />
                   </div>
                   <div className="question">
-                    <p className ="questionContent">3/13 Does caregiving involve physical strain?</p> {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
+                    <p className ="questionContent">12/13 Do you find caregiving to be a financial strain?</p> {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
                         <div className="slider-container">
                           <input
                             type="range"
@@ -76,9 +76,9 @@ const Questionnaire = () => {
               </div>
 
               <div className="concerns">
-                <p className="selectp">Select any concerns you've faced while caregiving (0/8):</p>
+                <p className="selectp">Select any concerns you've faced while caregiving (0/9):</p>
                 <div class="concernButtomsArea">
-                    {['Constant lifting, transferring, and assisting', 'Repetitive tasks everyday', 'Bathing, dressing, or feeding', 'Preventing falls', 'Prolonged standing', 'Carrying heaving supplies', 'Handling medical equipment', 'Supporting during exercises', 'Performing household chores', 'Other'].map((concern) => (
+                    {['Emergency care expenses unpredictability', 'Night-time care costs', 'Physical caregiving demands impact', 'Safety vigilance stress finances', 'Medical devices expenses noise', 'Monitoring medical needs costs', 'Erratic sleep patterns financials', 'Uncomfortable bedding expense burden', 'Lack of privacy financial strain', 'Others'].map((concern) => (
                         /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
                           <button
                             type="button"
