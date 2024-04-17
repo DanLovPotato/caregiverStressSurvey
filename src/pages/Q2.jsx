@@ -76,7 +76,7 @@ const Questionnaire = () => {
               </div>
 
               <div className="concerns">
-                <p className="selectp">Select any concerns you've faced while caregiving (0/8):</p>
+                <p className="selectp">Select any concerns you've faced while caregiving (0/10):</p>
                 <div class="concernButtomsArea">
                     {['Disruption of personal schedule', 'Limited social life', 'Frequent medical appointments', 'Communication difficulties', 'High physical caregiving demands', 'Caregiver Isolation', 'Complex dietary requirements', 'Unpredictable care needs', 'Transportation challenges', 'Other'].map((concern) => (
                         /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/

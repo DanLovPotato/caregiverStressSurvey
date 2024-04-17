@@ -50,7 +50,7 @@ const Questionnaire = () => {
                     <img  className="profile-pic" src={chicken}  alt="ChickenBaby" />
                   </div>
                   <div className="question">
-                    <p className ="questionContent">3/13 Does caregiving involve physical strain?</p> {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
+                    <p className ="questionContent">3/13 Has caregiving been physically straining to you?</p> {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
                         <div className="slider-container">
                           <input
                             type="range"
