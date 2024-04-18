@@ -78,7 +78,7 @@ const Questionnaire = () => {
               <div className="concerns">
                 <p className="selectp">Select any concerns you've faced while caregiving (0/9):</p>
                 <div class="concernButtomsArea">
-                    {['Emergency care unpredictability overwhelm', 'Night-time care exhaustion', 'Physical caregiving demands overwhelm', 'Safety vigilance stress overwhelm', 'Medical devices noise overwhelm', 'Monitoring medical needs overwhelm', 'Erratic sleep patterns overwhelm', 'Uncomfortable bedding discomfort overwhelm', 'Lack of privacy overwhelming stress', 'Others'].map((concern) => (
+                    {['Exhausted from constant worry', 'Struggling with financial strain', 'Feeling alone in caregiving duties', 'Feeling unprepared for the caregiving role', 'Emotional exhaustion', 'Juggling caregiving, work, family', 'Managing complex medical needs', 'Worried about uncertain future', 'Others'].map((concern) => (
                         /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
                           <button
                             type="button"

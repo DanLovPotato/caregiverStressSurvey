@@ -50,7 +50,7 @@ const Questionnaire = () => {
                     <img  className="profile-pic" src={chicken}  alt="ChickenBaby" />
                   </div>
                   <div className="question">
-                    <p className ="questionContent">6/13 Have there been changes in personal plans?</p> {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
+                    <p className ="questionContent">6/13 Have you had to change any personal plans as a result of caregiving?</p> {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
                         <div className="slider-container">
                           <input
                             type="range"
@@ -76,9 +76,9 @@ const Questionnaire = () => {
               </div>
 
               <div className="concerns">
-                <p className="selectp">Select any concerns you've faced while caregiving (0/8):</p>
+                <p className="selectp">Select any concerns you've faced while caregiving (0/9):</p>
                 <div class="concernButtomsArea">
-                    {['Prioritizing caregiving duties over personal plans', 'Unexpected changes in the care recipient\'s health condition', 'Dedicating more time than anticipated to caregiving tasks', 'Feeling too exhausted or overwhelmed to pursue personal plans', 'Changes in personal plans to prioritize self-care, medical appointments', 'Reorganizing household responsibilities or routines due to caregiving demands', 'Adjusting education plans or career plans to accommodate caregiving responsibilities', 'Navigating changes in social relationships or networks', 'Switched to part-time work', 'Other'].map((concern) => (
+                    {['Prioritizing caregiving duties', 'Reorganizing household responsibilities', 'Postponed education', 'Dedicating more time than anticipated on caregiving', 'Altered career paths', 'Switched to part-time work', 'Cancelled vacations', 'Feeling overwhelmed to pursue personal plans', 'Other'].map((concern) => (
                         /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
                           <button
                             type="button"

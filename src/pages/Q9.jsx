@@ -76,9 +76,9 @@ const Questionnaire = () => {
               </div>
 
               <div className="concerns">
-                <p className="selectp">Select any concerns you've faced while caregiving (0/10):</p>
+                <p className="selectp">Select any concerns you've faced while caregiving (0/9):</p>
                 <div class="concernButtomsArea">
-                    {['Care recipient is experiencing cognitive decline', 'Care recipient is exhibiting physical aggression', 'Verbal aggression distressed me', 'Repetitive behaviors', 'Ignoring the caregiver\'s attempts to communicate', 'Displaying inappropriate behaviors towards each other', 'Refusing medication or necessary medical interventions', 'Shows no appreciation for care', 'Refusing to allow the caregiver rest or personal time', 'Insists on unsafe living conditions/routines', 'Others'].map((concern) => (
+                    {['Displaying inappropriate behaviors', 'Exhibiting verbal aggression', 'Aggression due to memory loss', 'Refusing to communicate', 'Showing no appreciation for care', 'Sudden aggressive outbursts', 'Insists on unsafe living conditions', 'Refusing necessary medical interventions', 'Others'].map((concern) => (
                         /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
                           <button
                             type="button"

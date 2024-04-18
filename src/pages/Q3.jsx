@@ -77,9 +77,9 @@ const Questionnaire = () => {
               </div>
 
               <div className="concerns">
-                <p className="selectp">Select any concerns you've faced while caregiving (0/8):</p>
+                <p className="selectp">Select any concerns you've faced while caregiving (0/9):</p>
                 <div class="concernButtomsArea">
-                    {['Constant lifting, transferring, and assisting', 'Repetitive tasks everyday', 'Bathing, dressing, or feeding', 'Preventing falls', 'Prolonged standing', 'Carrying heaving supplies', 'Handling medical equipment', 'Supporting during exercises', 'Performing household chores', 'Other'].map((concern) => (
+                    {['Lifting and transferring patients', 'Long hours of standing', 'Bathing and personal care tasks', 'Carrying heavy supplies', 'Handling medical equipment', 'Preventing falls', 'Repetitive tasks everyday', 'Supporting during exercises', 'Other'].map((concern) => (
                         /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
                           <button
                             type="button"

@@ -50,7 +50,7 @@ const Questionnaire = () => {
                     <img  className="profile-pic" src={chicken}  alt="ChickenBaby" />
                   </div>
                   <div className="question">
-                    <p className ="questionContent">4/13 is caregiving described as confining?</p> {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
+                    <p className ="questionContent">4/13 Do you ever feel confined during caregiving?</p> {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
                         <div className="slider-container">
                           <input
                             type="range"
@@ -76,9 +76,9 @@ const Questionnaire = () => {
               </div>
 
               <div className="concerns">
-                <p className="selectp">Select any concerns you've faced while caregiving (0/8):</p>
+                <p className="selectp">Select any concerns you've faced while caregiving (0/9):</p>
                 <div class="concernButtomsArea">
-                    {['Constantly be presented to provide care, Difficult to take breaks or leave the house for personal time', 'Feelings of isolation (due to stress)', 'Prioritizing caregiving tasks over your own activities', 'Concerns about your own health', 'Loss of Personal Identity', 'Emotional Burden of Watching Decline', 'Progressive Isolation', 'Neglected Self-Care', 'Emotional Confinement', 'Other'].map((concern) => (/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+                    {['Constantly be presented to provide care', 'Difficult to take breaks', 'Isolated from friends, families', 'Prioritizing caregiving tasks over personal time', 'Neglected self-care', 'Stuck in caregiving routine', 'Loss of personal identity', 'Emotional burden of watching decline', 'Other'].map((concern) => (/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
                           <button
                             type="button"
                             key={concern}

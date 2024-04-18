@@ -50,7 +50,7 @@ const Questionnaire = () => {
                     <img  className="profile-pic" src={chicken}  alt="ChickenBaby" />
                   </div>
                   <div className="question">
-                    <p className ="questionContent">5/13 Have there been adjustments within the family?</p> {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
+                    <p className ="questionContent">5/13 Have there been any adjustments within your family due to caregiving?</p> {/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
                         <div className="slider-container">
                           <input
                             type="range"
@@ -76,9 +76,9 @@ const Questionnaire = () => {
               </div>
 
               <div className="concerns">
-                <p className="selectp">Select any concerns you've faced while caregiving (0/8):</p>
+                <p className="selectp">Select any concerns you've faced while caregiving (0/9):</p>
                 <div class="concernButtomsArea">
-                    {['Changes in family roles', 'Adjustments in family routines, schedules, and activities', 'Adjustments to their financial plans due to medical expenses', 'Changes in how family members communicate', 'Making modifications to accommodate care recipient\'s needs', 'Strain on Marriages', 'Emotional Distance from Children', 'Neglected Sibling Needs', 'Impact on Family Health and Well-being', 'Other'].map((concern) => (
+                    {['Changes in family roles', 'Changed living arrangements', 'Emotional distance from children', 'Budgeting for care costs', 'Changes in how family members communicate', 'Neglected sibling needs', 'Adjustments in family routines and schedules', 'Strain on marriages', 'Other'].map((concern) => (
                         /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
                           <button
                             type="button"

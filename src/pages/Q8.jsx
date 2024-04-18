@@ -76,9 +76,9 @@ const Questionnaire = () => {
               </div>
 
               <div className="concerns">
-                <p className="selectp">Select any concerns you've faced while caregiving (0/8):</p>
+                <p className="selectp">Select any concerns you've faced while caregiving (0/9):</p>
                 <div class="concernButtomsArea">
-                    {['Acceptance of new role as a caregiver', 'Worrying about the care recipient\'s health and safety', 'Feelings of guilt', 'Coping with changes in relationship with the care recipient', 'Discouraged by family\'s lack of support', 'Built meaningful relationship, parted ways after work concluded', 'Felt hopeless facing patient\'s unchangeable condition', 'Boredom crept in from daily routine repetition', 'Emotionally overwhelmed by heavy caregiving workload', 'Stressed from lacking caregiving knowledge', 'Other'].map((concern) => (
+                    {['Struggling with acceptance', 'Stressed from lacking caregiving knowledge', 'Battling constant guilt', 'Felt hopeless facing patient\'s condition', 'Discouraged by family\'s lack of support', 'Constant worry', 'Boredom crept in from repetitive routine', 'Patience tested daily', 'Other'].map((concern) => (
                         /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
                           <button
                             type="button"

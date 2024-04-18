@@ -78,7 +78,7 @@ const Questionnaire = () => {
               <div className="concerns">
                 <p className="selectp">Select any concerns you've faced while caregiving (0/9):</p>
                 <div class="concernButtomsArea">
-                    {['Emergency care expenses unpredictability', 'Night-time care costs', 'Physical caregiving demands impact', 'Safety vigilance stress finances', 'Medical devices expenses noise', 'Monitoring medical needs costs', 'Erratic sleep patterns financials', 'Uncomfortable bedding expense burden', 'Lack of privacy financial strain', 'Others'].map((concern) => (
+                    {['Emergency care expenses', 'Reduced work hours impact income', 'Expense of hiring additional help', 'Reduced savings due to caregiving', 'Strain from home modifications', 'Taking unpaid time off work', 'Increased utility bills from medical equipment', 'Transportation costs', 'Others'].map((concern) => (
                         /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
                           <button
                             type="button"

@@ -65,7 +65,7 @@ const Questionnaire = () => {
                                 <span className="slider-tick" onClick={() => setSelectedOption(0)}></span>
                                 <span className="slider-tick" onClick={() => setSelectedOption(1)}></span>
                                 <span className="slider-tick" onClick={() => setSelectedOption(2)}></span>
-                              </div>
+                                </div>
                           <div className="labels">
                             <span className="option-label">Never</span>
                             <span className="option-label">Sometimes</span>
@@ -78,7 +78,7 @@ const Questionnaire = () => {
               <div className="concerns">
                 <p className="selectp">Select any concerns you've faced while caregiving (0/9):</p>
                 <div class="concernButtomsArea">
-                    {['Unpredictable emergency care', 'Night-time care needs', 'Physical caregiving demands', 'Safety vigilance stress', 'Noise from medical devices', 'Monitoring medical needs', 'Patient’s erratic sleep', 'Uncomfortable bedding', 'Other'].map((concern) => (
+                    {['Unpredictable emergency care', 'Night-time care needs', 'Physical caregiving demands', 'Safety vigilance stress', 'Noise from medical devices', 'Monitoring medical needs', 'Patient\'s erratic sleep', 'Uncomfortable bedding', 'Other'].map((concern) => (
 
                           <button
                             type="button"
