@@ -26,15 +26,14 @@ function App() {
                 <Route path="/Q3" element={<Q3 />} />
                 <Route path="/Q4" element={<Q4 />} />
                 <Route path="/Q5" element={<Q5 />} />
-                <Route path="/Q5" element={<Q6 />} />
-                <Route path="/Q5" element={<Q7 />} />
-                <Route path="/Q5" element={<Q8 />} />
-                <Route path="/Q5" element={<Q9 />} />
-                <Route path="/Q5" element={<Q10 />} />
-                <Route path="/Q5" element={<Q11 />} />
-                <Route path="/Q5" element={<Q12 />} />
-                <Route path="/Q5" element={<Q13 />} />
-
+                <Route path="/Q6" element={<Q6 />} />
+                <Route path="/Q7" element={<Q7 />} />
+                <Route path="/Q8" element={<Q8 />} />
+                <Route path="/Q9" element={<Q9 />} />
+                <Route path="/Q10" element={<Q10 />} />
+                <Route path="/Q11" element={<Q11 />} />
+                <Route path="/Q12" element={<Q12 />} />
+                <Route path="/Q13" element={<Q13 />} />
             </Routes>
         </div>
     );
