@@ -1,5 +1,5 @@
 
-
+import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import './Qstyles.css'; // Ensure you have a CSS file for styles
 import chicken from './img/chicken.png';
@@ -25,11 +25,12 @@ const Questionnaire = () => {
       }
     });
   };
-
+  const navigate = useNavigate(); // Initialize the navigate function
   const handleSubmit = () => {
     console.log('Selected option:', selectedOption);
     console.log('Selected concerns:', selectedConcerns);
     // Submit these values to your backend or handle them as needed
+    navigate('/q13');
   };
 
   return (
