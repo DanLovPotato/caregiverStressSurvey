@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import './Qstyles.css'; // Ensure you have a CSS file for styles
 import chicken from './img/chicken.png';
-
+import axios from 'axios';
 
 
 
@@ -25,13 +25,25 @@ const Questionnaire = () => {
       }
     });
   };
-  const navigate = useNavigate(); // Initialize the navigate function
-  const handleSubmit = () => {
-    console.log('Selected option:', selectedOption);
-    console.log('Selected concerns:', selectedConcerns);
-    // Submit these values to your backend or handle them as needed
-    navigate('/q7');
-  };
+    const navigate = useNavigate(); // Initialize the navigate function
+
+    const handleSubmit = async () => {
+      try {
+        const response = await axios.post('http://localhost:3001/api/q', {
+          questionNumber: 6,
+          selectedOption,
+          selectedConcerns
+        });
+        if (response) {
+          console.log(response.data);
+          navigate('/q7');
+        } else {
+          console.error('Error submitting questionnaire data: Response is undefined');
+        }
+      } catch (error) {
+        console.error('Error submitting questionnaire data:', error.response.data);
+      }
+    };
 
   return (
         <div className="questionnaire">

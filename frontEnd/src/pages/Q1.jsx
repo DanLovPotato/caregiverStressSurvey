@@ -1,4 +1,4 @@
-
+import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import './Qstyles.css'; // Ensure you have a CSS file for styles
@@ -26,13 +26,25 @@ const Questionnaire = () => {
     });
   };
 
-  const navigate = useNavigate(); // Initialize the navigate function
-  const handleSubmit = () => {
-    console.log('Selected option:', selectedOption);
-    console.log('Selected concerns:', selectedConcerns);
-    // Submit these values to your backend or handle them as needed
-    navigate('/q2');
-  };
+    const navigate = useNavigate(); // Initialize the navigate function
+
+    const handleSubmit = async () => {
+      try {
+        const response = await axios.post('http://localhost:3001/api/q', {
+          questionNumber: 1,
+          selectedOption,
+          selectedConcerns
+        });
+        if (response) {
+          console.log(response.data);
+          navigate('/q2');
+        } else {
+          console.error('Error submitting questionnaire data: Response is undefined');
+        }
+      } catch (error) {
+        console.error('Error submitting questionnaire data:', error.response.data);
+      }
+    };
 
   return (
         <div className="questionnaire">
@@ -40,8 +52,8 @@ const Questionnaire = () => {
                <div class="progressnumber">
                      <div className="number" >1</div> {/* Assuming the .number is approximately 40px wide */}
                </div>
-                <div class="progress">
-                    <div class="bar shadow bubbles" style={{width: `${progress}%`}}></div>
+                <div className="progress">
+                    <div className="bar shadow bubbles" style={{width: `${progress}%`}}></div>
                 </div>
             </div>
 
