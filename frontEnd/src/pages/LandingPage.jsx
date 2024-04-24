@@ -12,6 +12,11 @@ function LandingPage() {
   const handleGetStartedClick = () => {
     navigate('/q1'); // Replace '/new-page-path' with the actual path you want to go to
   };
+    const handleGetStartedClickStory = () => {
+      navigate('/StoryPage'); // Replace '/new-page-path' with the actual path you want to go to
+    };
+
+
 
   return (
      <div className="container" style={{ backgroundImage: `url(${bg})` }}>
@@ -24,7 +29,7 @@ function LandingPage() {
                 Through this test, let's explore your stress levels together and enable us at CareYaya to tailor our services to better support you.
             </div>
             <div class = "buttons">
-                <button class="button" >Read our Story</button>
+                <button class="button" onClick={handleGetStartedClickStory}>Read our Story</button>
                 <button class="button" onClick={handleGetStartedClick}>Get Started</button>
             </div>
             <div class="footer">

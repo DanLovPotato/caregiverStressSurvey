@@ -13,6 +13,7 @@ import Q10 from './pages/Q10';
 import Q11 from './pages/Q11';
 import Q12 from './pages/Q12';
 import Q13 from './pages/Q13';
+import StoryPage from './pages/StoryPage';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -34,6 +35,7 @@ function App() {
                 <Route path="/Q11" element={<Q11 />} />
                 <Route path="/Q12" element={<Q12 />} />
                 <Route path="/Q13" element={<Q13 />} />
+                <Route path="/StoryPage" element={<StoryPage />} />
             </Routes>
         </div>
     );
