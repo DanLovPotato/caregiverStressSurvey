@@ -32,11 +32,11 @@ const Questionnaire = () => {
         const response = await axios.post('http://localhost:3001/api/q', {
           questionNumber: 13,
           selectedOption,
-          selectedConcerns
+          selectedConcerns 
         });
         if (response) {
           console.log(response.data);
-          navigate('/res');
+          navigate('/ReportPage');
         } else {
           console.error('Error submitting questionnaire data: Response is undefined');
         }

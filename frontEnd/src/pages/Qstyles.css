@@ -253,7 +253,9 @@
 
 /* options end  here*/
 
-
+.bottomButtons {
+  padding-bottom: 50px;
+}
 
 .next-button {
   position: relative;

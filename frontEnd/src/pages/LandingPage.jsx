@@ -10,10 +10,10 @@ function LandingPage() {
 
   // Function to handle click event
   const handleGetStartedClick = () => {
-    navigate('/q1'); // Replace '/new-page-path' with the actual path you want to go to
+    navigate('/q1'); 
   };
     const handleGetStartedClickStory = () => {
-      navigate('/StoryPage'); // Replace '/new-page-path' with the actual path you want to go to
+      navigate('/StoryPage'); 
     };
 
 
